@@ -1,0 +1,32 @@
+use("rental-project-db");
+
+// Clear existing data
+db.customers.deleteMany({});
+
+// Insert mock data for customers collection
+db.customers.insertMany([
+    {
+        "_id": ObjectID("101"),
+        "name": "Jenny",
+        "phone_number": "0971657284",
+        "address": "Bangkok",
+        "id_number": "563-1537"
+        "blacklist_flag": false
+    },
+    {
+        "_id": ObjectID("102"),
+        "name": "Cara",
+        "phone_number": "0946287493",
+        "address": "Nan",
+        "id_number": "584-9836"
+        "blacklist_flag": false
+    },
+    {
+        "_id": ObjectID("103"),
+        "name": "Petty",
+        "phone_number": "0930281746",
+        "address": "Chonburi",
+        "id_number": "983-0284"
+        "blacklist_flag": true
+    }
+]);

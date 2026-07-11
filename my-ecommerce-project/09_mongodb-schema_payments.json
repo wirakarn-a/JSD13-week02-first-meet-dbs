@@ -1,0 +1,71 @@
+use("rental-project-db");
+
+// Clear existing data
+db.payments.deleteMany({});
+
+// Insert mock data for products collection
+db.payments.insertMany([
+    {
+        "_id": ObjectID("0000001"),
+        "rental_id": ObjectID("10001"), // Jenny
+        "total_amount": 2500
+        "payment_type": [
+            {
+                "amount": 1000
+                "payment_type": "deposit"
+            },
+            {
+                "amount": 200
+                "payment_type": "delivery_fee"
+            },
+            {
+                "amount": 1300
+                "payment_type": "rental_fee"
+            }
+        ]
+        "payment_status": "completed"
+        "payment_date": "2026-07-09T10:30:00Z"
+    },
+    {
+        "_id": ObjectID("0000002"),
+        "rental_id": ObjectID("10002"), // Cara
+        "total_amount": 2600
+        "payment_type": [
+            {
+                "amount": 1000
+                "payment_type": "deposit"
+            },
+            {
+                "amount": 200
+                "payment_type": "delivery_fee"
+            },
+            {
+                "amount": 1400
+                "payment_type": "rental_fee"
+            }
+        ]
+        "payment_status": "completed"
+        "payment_date": "2026-07-12T10:30:00Z"
+    },
+    {
+        "_id": ObjectID("0000003"),
+        "rental_id": ObjectID("10003"), // Petty
+        "total_amount": 550
+        "payment_type": [
+            {
+                "amount": 200
+                "payment_type": "deposit"
+            },
+            {
+                "amount": 50
+                "payment_type": "delivery_fee"
+            },
+            {
+                "amount": 300
+                "payment_type": "rental_fee"
+            }
+        ]
+        "payment_status": "completed"
+        "payment_date": "2026-07-06T10:30:00Z"
+    }
+]);

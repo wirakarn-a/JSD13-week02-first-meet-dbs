@@ -1,0 +1,26 @@
+use("rental-project-db");
+
+// Clear existing data
+db.rental_items.deleteMany({});
+
+// Insert mock data for products collection
+db.rental_items.insertMany([
+    {
+        "_id": ObjectID("030001"),
+        "rental_id": ObjectID("10001"), // Jenny
+        "product_id": ObjectID("1001"), // Chanel lambskin
+        "item_price": 1300
+    },
+    {
+        "_id": ObjectID("030002"),
+        "rental_id": ObjectID("10002"), // Cara
+        "product_id": ObjectID("1002"), // Chanel 25
+        "item_price": 1400
+    },
+    {
+        "_id": ObjectID("030003"),
+        "rental_id": ObjectID("103"), // Petty
+        "product_id": ObjectID("1003"), // Fabrique.co
+        "item_price": 300
+    },
+]);

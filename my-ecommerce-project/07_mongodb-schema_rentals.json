@@ -1,0 +1,29 @@
+use("rental-project-db");
+
+// Clear existing data
+db.rentals.deleteMany({});
+
+// Insert mock data for products collection
+db.rentals.insertMany([
+    {
+        "_id": ObjectID("10001"),
+        "customer_id": ObjectID("101"), // Jenny
+        "rental_start_date": new Date("2026-07-11T06:00:00Z"),
+        "rental_end_date": new Date("2026-07-13T06:00:00Z"),
+        "status": "ongoing"
+    },
+    {
+        "_id": ObjectID("10002"),
+        "customer_id": ObjectID("102"), // Cara
+        "rental_start_date": new Date("2026-07-15T06:00:00Z"),
+        "rental_end_date": new Date("2026-07-19T06:00:00Z"),
+        "status": "reserved"
+    },
+    {
+        "_id": ObjectID("10003"),
+        "customer_id": ObjectID("103"), // Petty
+        "rental_start_date": new Date("2026-07-09T06:00:00Z"),
+        "rental_end_date": new Date("2026-07-11T06:00:00Z"),
+        "status": "overdue"
+    }
+]);
