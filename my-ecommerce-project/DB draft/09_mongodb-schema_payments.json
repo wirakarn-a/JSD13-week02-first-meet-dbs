@@ -6,6 +6,7 @@ db.payments.deleteMany({});
 // Insert mock data for payments collection
 db.payments.insertMany([
     {
+        "_id": ObjectId("689a00000000000000000031"),
         "rental_id": ObjectId("689a00000000000000000001"),
         "total_amount": 2500,
         "payment_type": [
@@ -26,6 +27,7 @@ db.payments.insertMany([
         "payment_date": "2026-07-09T10:30:00Z"
     },
     {
+        "_id": ObjectId("689a00000000000000000032"),
         "rental_id": ObjectId("689a00000000000000000002"),
         "total_amount": 2600,
         "payment_type": [
@@ -46,6 +48,7 @@ db.payments.insertMany([
         "payment_date": "2026-07-12T10:30:00Z"
     },
     {
+        "_id": ObjectId("689a00000000000000000033"),
         "rental_id": ObjectId("689a00000000000000000003"),
         "total_amount": 550,
         "payment_type": [

@@ -6,19 +6,22 @@ db.rentals.deleteMany({});
 // Insert mock data for rentals collection
 db.rentals.insertMany([
     {
-        "customer_id": ObjectId("689a00000000000000000101"),
+        "_id": ObjectId("689a00000000000000000001"),
+        "customer_id": ObjectId("689a00000000000000000101"), // Jenny
         "rental_start_date": new Date("2026-07-11T06:00:00Z"),
         "rental_end_date": new Date("2026-07-13T06:00:00Z"),
         "status": "ongoing"
     },
     {
-        "customer_id": ObjectId("689a00000000000000000102"),
+        "_id": ObjectId("689a00000000000000000002"),
+        "customer_id": ObjectId("689a00000000000000000102"), // Cara
         "rental_start_date": new Date("2026-07-15T06:00:00Z"),
         "rental_end_date": new Date("2026-07-19T06:00:00Z"),
         "status": "reserved"
     },
     {
-        "customer_id": ObjectId("689a00000000000000000103"),
+        "_id": ObjectId("689a00000000000000000003"),
+        "customer_id": ObjectId("689a00000000000000000103"), // Petty
         "rental_start_date": new Date("2026-07-09T06:00:00Z"),
         "rental_end_date": new Date("2026-07-11T06:00:00Z"),
         "status": "overdue"

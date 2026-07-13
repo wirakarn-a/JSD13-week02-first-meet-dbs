@@ -3,10 +3,11 @@ use("rental-project-db");
 // Clear existing data
 db.maintenance.deleteMany({});
 
-// Insert mock data for maintenance collection
+// Insert mock data for products collection
 db.maintenance.insertMany([
     {
-        "product_id": ObjectId("689a00000000000000000011"),
+        "_id": ObjectId("689a00000000000000000051"),
+        "product_id": ObjectId("689a00000000000000000011"), // Chanel Classic
         "maintenance_type": "cleaning",
         "cost": 500,
         "vendor": "ร้านซักผ้าหนังพรีเมียม",
@@ -14,7 +15,8 @@ db.maintenance.insertMany([
         "completion_date": "2026-07-19"
     },
     {
-        "product_id": ObjectId("689a00000000000000000012"),
+        "_id": ObjectId("689a00000000000000000052"),
+        "product_id": ObjectId("689a00000000000000000012"), // Chanel handbag
         "maintenance_type": "authentication_recheck",
         "cost": 800,
         "vendor": "ศูนย์ตรวจสอบของแท้ Bangkok Authentication",
@@ -22,11 +24,12 @@ db.maintenance.insertMany([
         "completion_date": "2026-08-03"
     },
     {
-        "product_id": ObjectId("689a00000000000000000013"),
+        "_id": ObjectId("689a00000000000000000053"),
+        "product_id": ObjectId("689a00000000000000000013"), // Fabrique
         "maintenance_type": "repair",
         "cost": 400,
         "vendor": "ร้านรับปะ ตัดเย็บเสื้อผ้า",
-        "start_date": "2026-07-21",
-        "completion_date": "2026-07-24"
+        "start_date": "2026-06-21",
+        "completion_date": "2026-06-24"
     }
 ]);

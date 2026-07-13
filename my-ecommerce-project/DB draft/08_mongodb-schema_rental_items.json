@@ -6,18 +6,21 @@ db.rental_items.deleteMany({});
 // Insert mock data for rental_items collection
 db.rental_items.insertMany([
     {
+        "_id": ObjectId("689a00000000000000000021"),
         "rental_id": ObjectId("689a00000000000000000001"),
-        "product_id": ObjectId("689a00000000000000000011"),
+        "product_id": ObjectId("689a00000000000000000011"), // Chanel Classic
         "item_price": 1300
     },
     {
+        "_id": ObjectId("689a00000000000000000022"),
         "rental_id": ObjectId("689a00000000000000000002"),
-        "product_id": ObjectId("689a00000000000000000012"),
+        "product_id": ObjectId("689a00000000000000000012"), // Chanel Handbag
         "item_price": 1400
     },
     {
+        "_id": ObjectId("689a00000000000000000023"),
         "rental_id": ObjectId("689a00000000000000000003"),
-        "product_id": ObjectId("689a00000000000000000013"),
+        "product_id": ObjectId("689a00000000000000000013"), // Fabrique
         "item_price": 300
     }
 ]);
