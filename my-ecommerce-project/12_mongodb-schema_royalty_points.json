@@ -1,0 +1,18 @@
+use("rental-project-db");
+
+// Clear existing data
+db.royalty_points.deleteMany({});
+
+// Insert mock data for royalty_points collection
+db.royalty_points.insertMany([
+    {
+        "customer_id": ObjectId("689a00000000000000000101"),
+        "total_rentals": 7,
+        "reward_redeemed": false
+    },
+    {
+        "customer_id": ObjectId("689a00000000000000000102"),
+        "total_rentals": 10,
+        "reward_redeemed": true
+    }
+]);

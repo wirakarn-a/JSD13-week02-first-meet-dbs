@@ -6,30 +6,30 @@ db.products.deleteMany({});
 // Insert mock data for products collection
 db.products.insertMany([
     {
-        "_id": ObjectID("1001"),
+        "_id": ObjectId("689a00000000000000000011"),
         "brand": "Chanel",
         "category": "bag",
         "daily_rate": NumberDecimal("1300.00"),
-        "product_details": "Classic 11.12 Lambskin black (6.1 x 10 x 2.6 in)"
-        "size": "S"
+        "product_details": "Classic 11.12 Lambskin black (6.1 x 10 x 2.6 in)",
+        "size": "S",
         "current_status": true
     },
     {
-        "_id": ObjectID("1002"),
+        "_id": ObjectId("689a00000000000000000012"),
         "brand": "Chanel",
         "category": "bag",
         "daily_rate": NumberDecimal("1400.00"),
-        "product_details": "Chanel 25 Small Handbag Grained Calfskin & Gold-Tone Metal black (11.8 x 10.2 x 5.5in)"
-        "size": "S"
+        "product_details": "Chanel 25 Small Handbag Grained Calfskin & Gold-Tone Metal black (11.8 x 10.2 x 5.5in)",
+        "size": "S",
         "current_status": true
     },
     {
-        "_id": ObjectID("1003"),
+        "_id": ObjectId("689a00000000000000000013"),
         "brand": "Fabrique.co",
         "category": "clothes",
-        "daily_rate": NumberDecimal("300.00"),
-        "product_details": "Elveria Dress Rose Bloom Collection"
-        "size": "M"
+        "daily_rate": NumberDecimal("300"),
+        "product_details": "Elveria Dress Rose Bloom Collection",
+        "size": "M",
         "current_status": true
     }
 ]);

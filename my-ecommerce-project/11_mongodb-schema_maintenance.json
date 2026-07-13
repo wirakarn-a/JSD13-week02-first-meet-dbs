@@ -1,0 +1,32 @@
+use("rental-project-db");
+
+// Clear existing data
+db.maintenance.deleteMany({});
+
+// Insert mock data for maintenance collection
+db.maintenance.insertMany([
+    {
+        "product_id": ObjectId("689a00000000000000000011"),
+        "maintenance_type": "cleaning",
+        "cost": 500,
+        "vendor": "ร้านซักผ้าหนังพรีเมียม",
+        "start_date": "2026-07-18",
+        "completion_date": "2026-07-19"
+    },
+    {
+        "product_id": ObjectId("689a00000000000000000012"),
+        "maintenance_type": "authentication_recheck",
+        "cost": 800,
+        "vendor": "ศูนย์ตรวจสอบของแท้ Bangkok Authentication",
+        "start_date": "2026-08-01",
+        "completion_date": "2026-08-03"
+    },
+    {
+        "product_id": ObjectId("689a00000000000000000013"),
+        "maintenance_type": "repair",
+        "cost": 400,
+        "vendor": "ร้านรับปะ ตัดเย็บเสื้อผ้า",
+        "start_date": "2026-07-21",
+        "completion_date": "2026-07-24"
+    }
+]);

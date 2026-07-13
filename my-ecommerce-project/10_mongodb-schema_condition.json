@@ -1,0 +1,22 @@
+use("rental-project-db");
+
+// Clear existing data
+db.condition.deleteMany({});
+
+// Insert mock data for condition collection
+db.condition.insertMany([
+    {
+        "rental_items_id": ObjectId("689a00000000000000000021"),
+        "check_type": "before_rental",
+        "condition_notes": "สภาพสมบูรณ์ ไม่มีรอย",
+        "photo_evidence": ["cond_501_1.jpg", "cond_501_2.jpg"],
+        "checked_by": "staff"
+    },
+    {
+        "rental_items_id": ObjectId("689a00000000000000000021"),
+        "check_type": "after_return",
+        "condition_notes": "มีรอยขีดข่วนเล็กน้อยที่มุมล่างซ้าย",
+        "photo_evidence": ["cond_202_1.jpg", "cond_202_2.jpg"],
+        "checked_by": "staff"
+    }
+]);
