@@ -28,8 +28,8 @@ db.customers.insertMany([
         "email": "petty@example.com",
         "id_number": "983-0284",
         "blacklist_flag": true
-    }
-     {
+    },
+    {
         "_id": ObjectId("689a00000000000000000104"),
         "name": "Mint",
         "phone_number": "0812345678",

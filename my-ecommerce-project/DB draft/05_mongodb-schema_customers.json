@@ -9,7 +9,7 @@ db.customers.insertMany([
         "_id": ObjectId("689a00000000000000000101"),
         "name": "Jenny",
         "phone_number": "0971657284",
-        "address": "Bangkok",
+        "email": "jenny1423@example.com",
         "id_number": "563-1537",
         "blacklist_flag": false
     },
@@ -17,7 +17,7 @@ db.customers.insertMany([
         "_id": ObjectId("689a00000000000000000102"),
         "name": "Cara",
         "phone_number": "0946287493",
-        "address": "Nan",
+        "email": "cara999@example.com",
         "id_number": "584-9836",
         "blacklist_flag": false
     },
@@ -25,7 +25,7 @@ db.customers.insertMany([
         "_id": ObjectId("689a00000000000000000103"),
         "name": "Petty",
         "phone_number": "0930281746",
-        "address": "Chonburi",
+        "email": "petty@example.com",
         "id_number": "983-0284",
         "blacklist_flag": true
     }

@@ -157,5 +157,32 @@ db.products.insertMany([
         "product_details": "Cassette Padded Intrecciato Leather Clutch dark green (10.2 x 5.5 in)",
         "size": "S",
         "current_status": true
+    },
+    {
+        "_id": ObjectId("689a00000000000000000028"),
+        "brand": "Rolex",
+        "category": "accessories",
+        "daily_rate": NumberDecimal("2500.00"),
+        "product_details": "Datejust 36 Stainless Steel & Yellow Gold Fluted Bezel silver dial (36mm)",
+        "size": "M",
+        "current_status": true
+    },
+    {
+        "_id": ObjectId("689a00000000000000000029"),
+        "brand": "Balenciaga",
+        "category": "bag",
+        "daily_rate": NumberDecimal("750.00"),
+        "product_details": "Le City Satchel Agneau black (15 x 10 x 5.5 in)",
+        "size": "M",
+        "current_status": true
+    },
+    {
+        "_id": ObjectId("689a00000000000000000030"),
+        "brand": "Manolo Blahnik",
+        "category": "shoes",
+        "daily_rate": NumberDecimal("500.00"),
+        "product_details": "Hangisi Jeweled Satin Pumps royal blue crystal buckle (EU 38)",
+        "size": "M",
+        "current_status": true
     }
 ]);

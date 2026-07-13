@@ -3,7 +3,7 @@ use("rental-project-db");
 // Clear existing data
 db.maintenance.deleteMany({});
 
-// Insert mock data for maintenance collection
+// Insert mock data for products collection
 db.maintenance.insertMany([
     {
         "_id": ObjectId("689a00000000000000000051"),
@@ -16,7 +16,7 @@ db.maintenance.insertMany([
     },
     {
         "_id": ObjectId("689a00000000000000000052"),
-        "product_id": ObjectId("689a00000000000000000012"), // Chanel Handbag
+        "product_id": ObjectId("689a00000000000000000012"), // Chanel handbag
         "maintenance_type": "authentication_recheck",
         "cost": 800,
         "vendor": "ศูนย์ตรวจสอบของแท้ Bangkok Authentication",
@@ -25,7 +25,7 @@ db.maintenance.insertMany([
     },
     {
         "_id": ObjectId("689a00000000000000000053"),
-        "product_id": ObjectId("689a00000000000000000013"), // Fabrique Dress
+        "product_id": ObjectId("689a00000000000000000013"), // Fabrique
         "maintenance_type": "repair",
         "cost": 400,
         "vendor": "ร้านรับปะ ตัดเย็บเสื้อผ้า",
@@ -35,7 +35,7 @@ db.maintenance.insertMany([
     {
         "_id": ObjectId("689a00000000000000000054"),
         "product_id": ObjectId("689a00000000000000000014"), // Louis Vuitton Neverfull
-        "maintenance_type": "deep_cleaning",
+        "maintenance_type": "cleaning",
         "cost": 700,
         "vendor": "ร้านซักผ้าหนังพรีเมียม",
         "start_date": "2026-07-20",
@@ -143,7 +143,7 @@ db.maintenance.insertMany([
     {
         "_id": ObjectId("689a00000000000000000066"),
         "product_id": ObjectId("689a00000000000000000026"), // Saint Laurent Jacket
-        "maintenance_type": "dry_cleaning",
+        "maintenance_type": "cleaning",
         "cost": 350,
         "vendor": "ร้านซักผ้าแบรนด์เนม",
         "start_date": "2026-07-14",
